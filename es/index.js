@@ -1,4 +1,4 @@
-import DataField from './DataField.jsx';
+import DataField from './DataField.js';
 export { DataField };
 
 export function dataFromElement(handle) {
