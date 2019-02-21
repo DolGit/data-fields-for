@@ -43,6 +43,9 @@ class DataField extends React.Component {
         if (this.props.fields._object) {
             this.props.fields._object[this.props.method] = e.target.value
         }
+        if (this.props.handleChange && typeof(this.props.handleChange) === 'function') {
+            this.props.handleChange(e)
+        }
     }
 
     render() {
