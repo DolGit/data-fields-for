@@ -50,7 +50,7 @@ class DataField extends React.Component {
 
     render() {
         const props = {...this.props}
-        props.delete('handleChange')
+        delete props['handleChange']
         return (
             <TextField
                 {...this.props.opts}
