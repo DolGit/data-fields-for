@@ -49,10 +49,12 @@ class DataField extends React.Component {
     }
 
     render() {
+        const props = {...this.props}
+        props.delete('handleChange')
         return (
             <TextField
                 {...this.props.opts}
-                {...this.props}
+                {...props}
                 fullWidth={this.props.fullWidth || true}
 
                 name={this.state.name}

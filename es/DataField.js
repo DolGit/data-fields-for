@@ -63,7 +63,9 @@ var DataField = function (_React$Component) {
     };
 
     DataField.prototype.render = function render() {
-        return React.createElement(TextField, _extends({}, this.props.opts, this.props, {
+        var props = _extends({}, this.props);
+        props.delete('handleChange');
+        return React.createElement(TextField, _extends({}, this.props.opts, props, {
             fullWidth: this.props.fullWidth || true,
 
             name: this.state.name,
