@@ -28,7 +28,7 @@ var DataField = function (_React$Component) {
     }
 
     DataField.prototype.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-        if (nextProps.field != this.props.field) {
+        if (nextProps.fields != this.props.fields) {
             this.setValue();
             this.setErrors();
         }

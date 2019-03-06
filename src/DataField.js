@@ -14,7 +14,7 @@ class DataField extends React.Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        if (nextProps.field != this.props.field) {
+        if (nextProps.fields != this.props.fields) {
             this.setValue()
             this.setErrors()
         }
