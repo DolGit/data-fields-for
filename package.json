@@ -1,6 +1,6 @@
 {
   "name": "@dolnpm/data-fields-for",
-  "version": "0.1.7-development",
+  "version": "0.1.8-development",
   "description": "Inspired by Rails text fields, this library provides a layer built on top of Material Ui's TextField, to display data, labels and error messages from data objects.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -20,7 +20,7 @@
     "semantic-release": "semantic-release",
     "travis-deploy-once": "travis-deploy-once"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "*",
     "react-dom": "*",
     "@material-ui/core": "*"
