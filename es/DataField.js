@@ -65,7 +65,8 @@ var DataField = function (_React$Component) {
     DataField.prototype.render = function render() {
         var props = _extends({}, this.props);
         delete props['handleChange'];
-        return React.createElement(TextField, _extends({}, this.props.opts, props, {
+        return React.createElement(TextField, _extends({}, props, {
+
             fullWidth: this.props.fullWidth || true,
 
             name: this.state.name,
@@ -77,7 +78,7 @@ var DataField = function (_React$Component) {
             onChange: this.handleChange,
             margin: 'normal',
             variant: 'outlined'
-        }));
+        }, this.props.opts));
     };
 
     return DataField;

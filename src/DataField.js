@@ -53,19 +53,20 @@ class DataField extends React.Component {
         delete props['handleChange']
         return (
             <TextField
-                {...this.props.opts}
-                {...props}
-                fullWidth={this.props.fullWidth || true}
+              {...props}
 
-                name={this.state.name}
-                value={this.state.value}
-                required={this.state.required}
-                helperText={this.state.helperText}
-                error={this.state.error}
-                
-                onChange={this.handleChange}
-                margin="normal"
-                variant="outlined"
+              fullWidth={this.props.fullWidth || true}
+
+              name={this.state.name}
+              value={this.state.value}
+              required={this.state.required}
+              helperText={this.state.helperText}
+              error={this.state.error}
+
+              onChange={this.handleChange}
+              margin="normal"
+              variant="outlined"
+              {...this.props.opts}
             />
         )
     }
